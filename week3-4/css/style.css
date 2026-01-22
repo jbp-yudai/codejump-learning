@@ -1,0 +1,18 @@
+.wrapper {
+    width: 100%;
+}
+.header{
+    background: tomato;
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    width: 860px;
+    margin: auto;
+}
+.main{
+    background: pink;
+}
+.footer{
+    background: orange;
+}
