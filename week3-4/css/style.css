@@ -3,6 +3,7 @@
 }
 .header{
     background: tomato;
+    margin: 7px;
 }
 .header-inner{
     display: flex;
@@ -10,9 +11,28 @@
     width: 860px;
     margin: auto;
 }
+.header-summary{
+    display: flex;
+    gap: 40px;
+}
 .main{
     background: pink;
+    text-align: center;
+}
+.about-content{
+    display: flex;
+    justify-content: center;
+}
+.bicycle-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.bicycle-content{
+
 }
 .footer{
     background: orange;
+    display: flex;
+    justify-content: center;
 }
