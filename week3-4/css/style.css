@@ -2,7 +2,6 @@
     width: 100%;
 }
 .header{
-    background: tomato;
     margin: 7px;
 }
 .header-inner{
@@ -14,25 +13,38 @@
 .header-summary{
     display: flex;
     gap: 40px;
+    align-items: center;
 }
 .main{
-    background: pink;
     text-align: center;
+}
+.section-title{
+    font-size: 32px;
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-underline-offset: 8px;
+    padding: 70px;
+}
+.about-text{
+    font-size: 16px;
+    
 }
 .about-content{
     display: flex;
     justify-content: center;
+    gap : 32px;
+}
+.name{
+    display: flex;
 }
 .bicycle-content{
     display: flex;
     justify-content: center;
     flex-direction: row;
-}
-.bicycle-content{
-
+    gap: 20px;
 }
 .footer{
-    background: orange;
     display: flex;
     justify-content: center;
+    margin-top: 150px;
 }
