@@ -1,4 +1,23 @@
-.wrapper {
+p{
+    font-size: 14.4px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 32px;
+}
+h3{
+    font-size: 16px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.wrapper{
     width: 100%;
 }
 .header{
@@ -7,13 +26,16 @@
 .header-inner{
     display: flex;
     justify-content: space-between;
-    width: 860px;
+    align-items: center;
+    max-width: 860px;
+    width: 100%;
     margin: auto;
 }
 .header-summary{
     display: flex;
     gap: 30px;
     align-items: center;
+    font-size: 14.4px;
 }
 .main{
     text-align: center;
@@ -22,31 +44,37 @@
     padding-bottom: 20px;
 }
 .section-title{
-    font-size: 32px;
     text-decoration: underline;
     text-decoration-thickness: from-font;
     text-underline-offset: 8px;
-    padding: 70px;
+    margin-top: 80px;
+    margin-bottom: 70px;
 }
 .about-text{
-    font-size: 16px;
-    
+    font-size: 16px;   
 }
 .about-content{
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding-top: 10px;
-    padding-bottom: 40px;
+}
+.about-content img{
+    width: 100px;
+    height: 100px;
 }
 .name{
-    display: flex;
+    margin-bottom: 10px;
 }
 .bicycle-content{
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 18px;
+}
+.bicycle-content img{
+    width: 275px;
+    height: 182px;
+    object-fit: cover;
 }
 .bicycle-title {
     margin: 10px;
@@ -55,4 +83,61 @@
     display: flex;
     justify-content: center;
     margin-top: 110px;
+}
+
+
+@media screen and (max-width: 768px){
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+.header{
+    margin: 10px;
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.main-photo img{
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+}
+.main-photo{
+    display: flex;
+    justify-content: center;
+}
+.section-title{
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+.bicycle-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 15px;
+}
+.bicycle-content img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.about-text{
+    text-align: justify;
+    margin: 0 15px;
+}
+.name{
+    margin-bottom: 10px;
+}
+.footer{
+    margin-top: 110px;
+}
 }
