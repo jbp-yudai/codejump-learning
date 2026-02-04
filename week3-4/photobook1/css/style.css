@@ -1,0 +1,143 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    background-color: #F4F9FF;
+}
+/* 見出し・本文はクラスで指定（要素セレクタだと範囲が広く、BEMとも不統一になるため） */
+.index__title,
+.detail__title,
+.detail__heading {
+    font-size: 1.8rem;
+}
+.index__list,
+.detail__info-list,
+.detail__description,
+.detail__store-link {
+    font-size: 1.4rem;
+}
+.footer__copyright {
+        font-size: 1rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.header {
+    margin: 60px auto 15px auto;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__visual {
+    margin-bottom: 64px;
+}
+.index {
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 282px;
+    margin-bottom: 60px;
+    padding: 30px 200px;
+}
+.index__title {
+    margin-bottom: 10px;
+}
+.index__item {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.index__item:last-child {
+    margin-bottom: 0;
+}
+.detail__title {
+    margin-bottom: 10px;
+}
+.detail__content {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.detail__cover {
+    flex: 0 0 270px;
+}
+.detail__cover-img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+.detail__info-list {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 26px;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+    padding: 16px 0;
+}
+.detail__description {
+    padding-top: 25px;
+}
+.detail__body {
+    flex: 0 0 270px;
+}
+.detail__heading{
+    margin-bottom: 20px;
+}
+.detail__info {
+    margin: 16px 0;
+}
+.footer {
+    max-width: 600px;
+    margin: 115px auto 15px auto;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        overflow-x: hidden;
+    }
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main__visual {
+        padding: 0 10px;
+    }
+    .index {
+        padding: 30px 40px;
+    }
+    .detail {
+        padding: 0 40px;
+    }
+    .detail__content {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin: 0;
+    }
+    .detail__cover {
+        width: 100%;
+    }
+    .detail__cover-img {
+        height: auto;
+        aspect-ratio: 1;
+    }
+    .detail__body {
+        width: 100%;
+        flex: none;
+    }
+    .detail__info-list {
+        gap: 0 32px;
+    }
+    .footer {
+        margin: 115px 40px 15px 40px;
+    }
+}
