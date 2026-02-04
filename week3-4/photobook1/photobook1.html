@@ -11,38 +11,38 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <a class="header-inner">
-                <img src="images/logo.png" alt="logo" loading="eager">
+            <a class="header__link" href="#">
+                <img class="header__logo" src="images/logo.svg" alt="logo" loading="eager" width="160" height="18">
             </a>
         </header>
         <main class="main">
-            <div class="main-image">
-                    <a href="images/photo1.jpg">
-                    <img src="images/photo1.jpg" alt="空の写真" width="1000" height="400" loading="eager">
-                    </a>
-                </div>
-            <section class="main-list">
-                <h2>INDEX</h2>
-                <ol >
-                    <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
-                    <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
-                    <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
-                    <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
-                    <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+            <div class="main__visual">
+                <a class="main__visual-link" href="#">
+                    <img class="main__visual-img" src="images/mainvisual.jpg" alt="空の写真" width="1000" height="400" loading="eager">
+                </a>
+            </div>
+            <section class="index">
+                <h2 class="index__title">INDEX</h2>
+                <ol class="index__list">
+                    <li class="index__item">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+                    <li class="index__item">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+                    <li class="index__item">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+                    <li class="index__item">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+                    <li class="index__item">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
                 </ol>
             </section>
-            <section class="section-detail">
-                <h2>DETAIL</h2>
-                <div class="detail-content">
-                    <div class="book-detail">
-                        <a href="images/photo2.jpg">
-                            <img src="images/photo2.jpg" alt="詳細写真" width="270" height="270" loading="lazy">
+            <section class="detail">
+                <h2 class="detail__title">DETAIL</h2>
+                <div class="detail__content">
+                    <div class="detail__cover">
+                        <a class="detail__cover-link" href="#">
+                            <img class="detail__cover-img" src="images/detail.jpg" alt="詳細写真" width="270" height="270" loading="lazy">
                         </a>
                     </div>
-                    <div class="book-title">
-                        <h3>タイトルタイトルタイトル</h3>
-                        <div class="book-info">
-                            <dl>
+                    <div class="detail__body">
+                        <h3 class="detail__heading">タイトルタイトルタイトル</h3>
+                        <div class="detail__info">
+                            <dl class="detail__info-list">
                                 <dt>著者</dt>
                                 <dd>タイトルタイトルタイトル</dd>
                                 <dt>出版社</dt>
@@ -50,17 +50,20 @@
                                 <dt>発行年</dt>
                                 <dd>タイトルタイトルタイトル</dd>
                             </dl>
-                            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <div class="detail__description">
+                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
                         </div>
-                        <a href="#">オンラインストアで見る</a>
+                        <div class="detail__link">
+                            <a href="#">オンラインストアで見る</a>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
-            © 2020 PHOTO BOOK
+            <p class="footer__copyright">&copy; 2020 PHOTO BOOK</p>
         </footer>
     </div>
 </body>
-
 </html>
