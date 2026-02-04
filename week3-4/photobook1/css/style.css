@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 html {
     font-size: 62.5%;
 }
@@ -10,12 +5,22 @@ body {
     font-size: 1.6rem;
     background-color: #F4F9FF;
 }
-h2, h3 {
+/* 見出し・本文はクラスで指定（要素セレクタだと範囲が広く、BEMとも不統一になるため） */
+.index__title,
+.detail__title,
+.detail__heading {
     font-size: 1.8rem;
 }
-ol, dl, p, a {
+.index__list,
+.detail__info-list,
+.detail__description,
+.detail__store-link {
     font-size: 1.4rem;
 }
+.footer__copyright {
+        font-size: 1rem;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -94,9 +99,7 @@ img {
     max-width: 600px;
     margin: 115px auto 15px auto;
 }
-.footer__copyright{
-    font-size: 1rem;
-}
+
 @media screen and (max-width: 768px) {
     .wrapper {
         overflow-x: hidden;
