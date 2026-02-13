@@ -1,0 +1,137 @@
+@use "ress";
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Meiryo", sans-serif;
+}
+.recipe{
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    &__media {
+        width: 50%;
+    }
+    &__img {
+        width: 100%;
+        aspect-ratio: 6 / 7;
+        object-fit: cover;
+    }
+    &__body {
+        padding: 40px 60px 0 60px;
+        width: 50%;
+    }
+    &__title{
+        margin-bottom: 20px;
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+    &__lead {
+        margin-bottom: 40px;
+    }
+    &__ingredients{
+        margin-bottom: 40px;
+    }
+    &__ingredients-list {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        margin-bottom: 21px;
+    }
+    &__ingredients-item {
+        display: contents;
+    }
+    &__ingredients-title{
+        border-bottom: 1px solid;
+        font-size: 2rem;
+        margin-bottom: 21px;
+        padding-bottom: 5px;
+    }
+    &__ingredients-term {
+        grid-column: 1;
+        border-bottom: 1px dotted;
+        margin-bottom: 6px;
+        padding-bottom: 6px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    &__ingredients-amount {
+        grid-column: 2;
+        border-bottom: 1px dotted;
+        text-align: right;
+        margin-bottom: 6px;
+        padding-bottom: 6px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__steps-title{
+        border-bottom: 1px solid;
+        margin-bottom: 21px;
+        padding-bottom: 5px;
+        font-size: 2rem;
+    }
+    &__steps-list {
+        display: flex;
+        flex-direction: column;
+        margin-left: 19px;
+    }
+    &__steps-item {
+        padding-bottom: 6px;
+        margin-bottom: 6px;
+        border-bottom: 1px dotted;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+}
+.cta{
+    text-align: center;
+    &__button{
+        border: 1px solid black;
+        padding: 16px 51px;
+        display: inline-block;
+        margin: 60px 0 100px 0;
+        font-size: 1.4rem;
+    }
+}
+.footer{
+    font-size: 1.2rem;
+
+    &__social-list{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;
+        text-underline-offset: 3px;
+        margin-bottom: 20px;
+    }
+    &__copyright{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .recipe{
+        &__inner {
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        &__media {
+            width: 100%;
+        }
+        &__body {
+            width: 100%;
+            padding: 40px 18.8px 0 18.8px;
+        }
+        &__img {
+            height: auto;
+        }        
+    }
+}
